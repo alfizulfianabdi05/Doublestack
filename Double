@@ -1,0 +1,73 @@
+#include <stdio.h>
+#define max 10
+struct stack {
+char S[max];
+int top;
+};
+void init(struct stack *K);
+void push(struct stack *K, char x);
+char pop(struct stack *K);
+void baca(struct stack *K);
+void clear();
+main(){
+char jawab,x;
+struct stack K;
+init(&K);
+do{
+printf("[1]-PUSH\n");
+printf("[2]-POP\n");
+printf("[3]-BACA\n");
+printf("[4]-KELUAR\n");
+printf("pilih..? "); scanf("%s",&jawab);
+clear();
+printf("************************\n");
+switch(jawab){
+case '1' : printf("PUSHKan " ); scanf("%c",&x); push(&K,x); break;
+case '2' : printf("%c\n",pop(&K)); break;
+case '3' : baca(&K); break;
+case '4' : break;
+default : printf("salah PIlih\n"); break;
+}
+}while(jawab!='4');
+printf("\n");
+}
+void clear(){
+char junk[10];
+fgets(junk,10,stdin);
+}
+void init(struct stack *K){
+(*K).top=-1;
+}
+void push(struct stack *K, char x){
+if((*K).top==max){
+printf("OverFlow\n");
+}
+else{
+(*K).top++;
+(*K).S[(*K).top]=x;
+}
+}
+char pop(struct stack *K){
+char x;
+if((*K).top!=-1){
+x=(*K).S[(*K).top];
+(*K).top--;
+return x;
+}
+else{
+printf("UnderFlow\n");
+return 'u';
+}
+}
+void baca(struct stack *K){
+int i =-1;
+if(i<(*K).top){
+for(i=0;i<=(*K).top;i++){
+printf("%2c",(*K).S[i]);
+}
+printf("\n");
+}
+else{
+printf("kosong\n");
+}
+}
