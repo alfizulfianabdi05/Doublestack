@@ -23,3 +23,5 @@ printf("pilih..? "); scanf("%s",&jawab);
 clear();
 printf("************************\n");
 switch(jawab){
+case '1' : printf("PUSHKan " ); scanf("%c",&x); push(&K,x); break;
+case '2' : printf("%c\n",pop(&K)); break;
