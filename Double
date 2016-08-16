@@ -8,3 +8,5 @@ int top;
 void init(struct stack *K);
 void push(struct stack *K, char x);
 char pop(struct stack *K);
+void baca(struct stack *K);
+void clear();
