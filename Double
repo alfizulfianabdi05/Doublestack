@@ -29,3 +29,6 @@ case '3' : baca(&K); break;
 case '4' : break;
 default : printf("salah PIlih\n"); break;
 }
+}while(jawab!='4');
+printf("\n");
+}
