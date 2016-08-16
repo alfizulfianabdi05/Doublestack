@@ -32,3 +32,5 @@ default : printf("salah PIlih\n"); break;
 }while(jawab!='4');
 printf("\n");
 }
+void clear(){
+char junk[10];
