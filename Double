@@ -66,3 +66,10 @@ if(i<(*K).top){
 for(i=0;i<=(*K).top;i++){
 printf("%2c",(*K).S[i]);
 }
+
+printf("\n");
+}
+else{
+printf("kosong\n");
+}
+}
