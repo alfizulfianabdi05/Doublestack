@@ -1,2 +1,6 @@
 #include <stdio.h>
 #define max 10
+struct stack {
+char S[max];
+int top;
+};
