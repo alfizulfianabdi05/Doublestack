@@ -7,3 +7,4 @@ int top;
 
 void init(struct stack *K);
 void push(struct stack *K, char x);
+char pop(struct stack *K);
