@@ -34,3 +34,5 @@ printf("\n");
 }
 void clear(){
 char junk[10];
+fgets(junk,10,stdin);
+}
