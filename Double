@@ -55,3 +55,8 @@ x=(*K).S[(*K).top];
 (*K).top--;
 return x;
 }
+else{
+printf("UnderFlow\n");
+return 'u';
+}
+}
