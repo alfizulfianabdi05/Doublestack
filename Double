@@ -12,3 +12,6 @@ void baca(struct stack *K);
 void clear();
 main(){
 char jawab,x;
+struct stack K;
+init(&K);
+do{
