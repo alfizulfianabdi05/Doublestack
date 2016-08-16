@@ -18,3 +18,8 @@ do{
 printf("[1]-PUSH\n");
 printf("[2]-POP\n");
 printf("[3]-BACA\n");
+printf("[4]-KELUAR\n");
+printf("pilih..? "); scanf("%s",&jawab);
+clear();
+printf("************************\n");
+switch(jawab){
