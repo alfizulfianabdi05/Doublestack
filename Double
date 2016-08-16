@@ -48,3 +48,5 @@ else{
 (*K).S[(*K).top]=x;
 }
 }
+char pop(struct stack *K){
+char x;
