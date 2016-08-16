@@ -43,3 +43,8 @@ void push(struct stack *K, char x){
 if((*K).top==max){
 printf("OverFlow\n");
 }
+else{
+(*K).top++;
+(*K).S[(*K).top]=x;
+}
+}
