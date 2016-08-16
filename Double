@@ -17,3 +17,4 @@ init(&K);
 do{
 printf("[1]-PUSH\n");
 printf("[2]-POP\n");
+printf("[3]-BACA\n");
