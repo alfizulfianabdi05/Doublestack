@@ -39,3 +39,7 @@ fgets(junk,10,stdin);
 void init(struct stack *K){
 (*K).top=-1;
 }
+void push(struct stack *K, char x){
+if((*K).top==max){
+printf("OverFlow\n");
+}
