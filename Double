@@ -60,3 +60,9 @@ printf("UnderFlow\n");
 return 'u';
 }
 }
+void baca(struct stack *K){
+int i =-1;
+if(i<(*K).top){
+for(i=0;i<=(*K).top;i++){
+printf("%2c",(*K).S[i]);
+}
