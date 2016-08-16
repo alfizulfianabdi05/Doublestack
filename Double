@@ -4,3 +4,6 @@ struct stack {
 char S[max];
 int top;
 };
+
+void init(struct stack *K);
+void push(struct stack *K, char x);
