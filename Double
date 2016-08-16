@@ -50,3 +50,8 @@ else{
 }
 char pop(struct stack *K){
 char x;
+if((*K).top!=-1){
+x=(*K).S[(*K).top];
+(*K).top--;
+return x;
+}
