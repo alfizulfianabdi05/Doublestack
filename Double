@@ -16,3 +16,4 @@ struct stack K;
 init(&K);
 do{
 printf("[1]-PUSH\n");
+printf("[2]-POP\n");
